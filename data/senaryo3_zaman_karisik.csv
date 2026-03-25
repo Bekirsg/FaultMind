@@ -1,0 +1,5 @@
+Timestamp,Alarm_ID,Error_Code,Message,Device
+2026-03-25 14:00:45,ALM_0022,16#0512,Process image not updated,I-O-Backplane_1
+2026-03-25 14:00:10,ALM_0020,16#02C7,PROFINET Link down,SCADA-GW/S7-1500
+2026-03-25 14:00:55,ALM_0023,16#030A,I/O failure detected,ET200MP/DI_16
+2026-03-25 14:00:25,ALM_0021,16#04B1,CPU STOP mode,CPU_1516-3PN

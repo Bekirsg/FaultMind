@@ -1,0 +1,15 @@
+# Güvenlik 
+.env
+
+# Sanal Ortam 
+venv/
+env/
+
+# Yerel Veritabanı 
+storage_native/
+
+# Python Cache Dosyaları
+__pycache__/
+*.pyc
+# Çok büyük PDF dosyaları (GitHub 100MB limiti için)
+docs/excluded/

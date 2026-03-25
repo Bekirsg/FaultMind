@@ -1,0 +1,4 @@
+Timestamp,Alarm_ID,Error_Code,Message,Device
+2026-03-25 11:20:00,ALM_0010,16#9999,Unknown vendor specific fatal error,VFD-Drive-01
+2026-03-25 11:20:05,ALM_0011,16#8888,Axis synchronization lost randomly,Servo-Motor-02
+2026-03-25 11:20:10,ALM_0012,16#04B1,CPU enters STOP mode,CPU_1516-3PN

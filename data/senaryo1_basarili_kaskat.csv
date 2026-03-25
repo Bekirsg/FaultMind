@@ -1,0 +1,7 @@
+Timestamp,Alarm_ID,Error_Code,Message,Device
+2026-03-25 10:15:32,ALM_0001,16#02C7,Communication error detected on PROFINET link,SCADA-GW/S7-1500
+2026-03-25 10:15:38,ALM_0002,16#04B1,CPU enters STOP mode due to ongoing communication fault,CPU_1516-3PN
+2026-03-25 10:15:45,ALM_0003,16#02C8,Communication error persists; watchdog triggered,CPU_1516-3PN
+2026-03-25 10:16:01,ALM_0004,16#0512,CPU remains in STOP; process image not updated,I-O-Backplane_1
+2026-03-25 10:16:12,ALM_0005,16#030A,I/O failure detected on modular interfaces; input module diagnostics active,ET200MP/DI_16
+2026-03-25 10:16:25,ALM_0006,16#030B,I/O failure cleared after module reset; channel status abnormal,ET200MP/DO_16
