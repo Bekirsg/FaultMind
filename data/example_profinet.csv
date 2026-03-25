@@ -1,0 +1,9 @@
+Timestamp,Device,Error_Code,Severity,Message
+2024-01-15 08:45:01,CPU_1516-3_PN,W#16#0A15,Warning,PROFINET IO: Device ET200SP_01 not reachable
+2024-01-15 08:45:03,ET200SP_01,W#16#0A15,Error,Station failure - IO controller connection lost
+2024-01-15 08:45:05,CPU_1516-3_PN,W#16#0B25,Error,IO data transfer interrupted - missing cycles > 3
+2024-01-15 08:45:07,CPU_1516-3_PN,F#16#1F01,Critical,CPU switched to STOP mode - IO error limit exceeded
+2024-01-15 08:45:08,HMI_TP1500,E#16#FF04,Error,Visualization: PLC connection lost - runtime stopped
+2024-01-15 08:45:09,SCADA_WinCC,E#16#FF10,Critical,OPC-UA session terminated - all tags invalid
+2024-01-15 08:45:15,CPU_1516-3_PN,W#16#0A16,Info,Diagnostic buffer: Hardware fault logged at slot 3
+2024-01-15 08:45:20,ET200SP_01,W#16#0A17,Warning,Module PM-E DC24V power module voltage drop detected

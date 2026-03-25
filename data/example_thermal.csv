@@ -1,0 +1,9 @@
+Timestamp,Device,Error_Code,Severity,Message
+2024-01-16 14:20:00,SINAMICS_G120_M01,F7011,Warning,Motor temperature warning 85C - threshold 80C exceeded
+2024-01-16 14:20:30,SINAMICS_G120_M01,F7012,Warning,Motor temperature pre-alarm 92C - shutdown imminent
+2024-01-16 14:21:00,SINAMICS_G120_M01,F7023,Error,Motor thermal overload relay triggered - drive fault
+2024-01-16 14:21:01,CPU_1214C_DC/DC,W#16#0C05,Error,Drive fault signal received on DI channel 4
+2024-01-16 14:21:02,CPU_1214C_DC/DC,F#16#1F01,Critical,Safety interlock FB activated - conveyor STOP
+2024-01-16 14:21:03,SINAMICS_G120_M01,A7850,Error,Drive output disabled - waiting for reset command
+2024-01-16 14:21:05,HMI_KTP700,E#16#0301,Warning,Operator alarm: Conveyor Line 2 emergency stop active
+2024-01-16 14:25:00,SINAMICS_G120_M01,F7900,Info,Fault memory full - oldest entry overwritten

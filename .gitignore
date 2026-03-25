@@ -13,3 +13,5 @@ __pycache__/
 *.pyc
 # Çok büyük PDF dosyaları (GitHub 100MB limiti için)
 docs/excluded/
+docs/*.pdf
+docs/**/*.pdf

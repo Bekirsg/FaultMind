@@ -1,0 +1,9 @@
+Timestamp,Device,Error_Code,Severity,Message
+2024-01-17 22:10:00,STOP_PSU8600,PS1001,Warning,Output voltage low: 22.1V (nominal 24V) - tolerance exceeded
+2024-01-17 22:10:02,STOP_PSU8600,PS1002,Error,Voltage out of tolerance range 20-26.4V - current 8.2A
+2024-01-17 22:10:03,CPU_1515-2_PN,W#16#0D01,Error,Under-voltage detected on 24V backplane supply
+2024-01-17 22:10:04,ET200MP_02,W#16#0A15,Error,Remote IO station lost - power interruption on rack
+2024-01-17 22:10:04,ET200MP_03,W#16#0A15,Error,Remote IO station lost - power interruption on rack
+2024-01-17 22:10:05,CPU_1515-2_PN,F#16#1F01,Critical,CPU emergency STOP - supply voltage critical
+2024-01-17 22:10:06,SCADA_WinCC,E#16#FF10,Critical,Multiple tag groups invalid - PLC communication down
+2024-01-17 22:10:08,UPS_Module,UP1003,Warning,UPS battery activated - mains power supply failed
