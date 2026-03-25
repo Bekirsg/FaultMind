@@ -64,3 +64,5 @@ Dil & Arayüz: Python, Streamlit, Pandas
 AI Core: Anthropic Claude 3 (Agentic Logic), LlamaIndex (Native Storage)
 
 Endüstriyel veri gizliliğini (NDA) korumak amacıyla projede gerçek fabrika verileri değil, yapay zeka ile üretilmiş sentetik arıza logları (sample_log.csv) kullanılmaktadır.
+
+"Yasal Uyarı: Bu proje bağımsız ve açık kaynaklı bir topluluk çalışmasıdır. 'Siemens', 'S7-1200' ve 'S7-1500' Siemens AG'nin tescilli ticari markalarıdır. FaultMind'ın Siemens AG ile resmi bir bağı bulunmamaktadır."
