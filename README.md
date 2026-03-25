@@ -11,7 +11,7 @@ Sahadaki mühendislerin arıza ararken harcadığı saatleri, yapay zekanın **1
 
 
 
-🔗 **Canlı Demo:** [FaultMind Demo Sitesi](https://your-streamlit-app.streamlit.app)
+🔗 **Canlı Demo:** [FaultMind Demo Sitesi](https://faultmind-i9ee6rjkerjqqggpbcznh5.streamlit.app/)
 
 🐙 **Geliştirici:** [Bekir Samet Güzlek](https://github.com/yourusername) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/bekirsametguzlek)
 
@@ -29,7 +29,7 @@ Sahadaki mühendislerin arıza ararken harcadığı saatleri, yapay zekanın **1
 
 # Repoyu klonlayın
 
-git clone [https://github.com/yourusername/FaultMind.git](https://github.com/yourusername/FaultMind.git)
+git clone [https://github.com/yourusername/FaultMind.git](https://github.com/Bekirsg/FaultMind.git)
 
 cd FaultMind
 
