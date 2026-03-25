@@ -1,9 +1,9 @@
 
-# ⚙️ FaultMind: AI-Powered PLC/SCADA Diagnostic Assistant
+# ⚙️ FaultMind: Agentic PLC/SCADA Diagnostic Assistant
 
 
 
-![FaultMind Demo](assets/demo.gif)**FaultMind**, endüstriyel tesislerde (Siemens S7-1200/1500) yaşanan zincirleme otomasyon arızalarının kök nedenini otonom olarak bulan açık kaynaklı bir yapay zeka asistanıdır.
+**FaultMind**, endüstriyel tesislerde (Siemens S7-1200/1500) yaşanan zincirleme otomasyon arızalarının kök nedenini otonom olarak bulan açık kaynaklı bir yapay zeka asistanıdır.
 
 
 
@@ -11,27 +11,23 @@ Sahadaki mühendislerin arıza ararken harcadığı saatleri, yapay zekanın **1
 
 
 
-🔗 **Canlı Demo:** [FaultMind Demo Sitesi](https://your-streamlit-app.streamlit.app) 
+🔗 **Canlı Demo:** [FaultMind Demo Sitesi](https://your-streamlit-app.streamlit.app)
 
-🐙 **Geliştirici:** [Bekir Samet Güzlek](https://github.com/yourusername)
-
-
-
----## 🌟 Neden FaultMind?* **🕵️‍♂️ Otonom Kök Neden Analizi:** Yüzlerce satırlık karmaşık SCADA loglarını tarar, olayların zaman akışını (zaman korelasyonu) kurar ve "İlk patlayan nokta neresiydi?" sorusunu cevaplar.* **💡 Şeffaf Düşünce Zinciri:** Yapay zekanın "kara kutu" olmasını engeller. Asistanın logları nasıl okuduğunu, hangi dokümana başvurduğunu ve nasıl karar verdiğini arayüzde adım adım izlersiniz.* **🛡️ Güvenilir Bilgi (Sıfır Tahmin):** Sadece resmi Siemens System Manual dokümanlarından beslenir. Bilmediği bir kod gördüğünde uydurmaz, uzman müdahalesi talep eder.* **⚡ Tak-Çalıştır Endüstriyel Mimari:** Ağır veritabanları gerektirmez. Minimum sistem gereksinimiyle her Windows/Endüstriyel PC'de anında çalışır.
+🐙 **Geliştirici:** [Bekir Samet Güzlek](https://github.com/yourusername) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/bekirsametguzlek)
 
 
 
----## 🏗️ Nasıl Çalışır?1. **Yükle:** Fabrikadan alınan arıza logunu (.csv) sisteme sürükleyin.2. **Analiz Et:** FaultMind veriyi okur, zaman damgalarını sıralar ve asıl donanım/haberleşme problemini tespit eder.3. **Çöz:** Resmi Siemens dokümanlarına göre "Şu an sahada yapılması gereken ilk 3 işlem" listesini size sunar.
+---## 🌟 Neden FaultMind?- **🕵️‍♂️ Otonom Kök Neden Analizi** – Yüzlerce satırlık karmaşık SCADA loglarını tarar, olayların zaman akışını (zaman korelasyonu) kurar ve "İlk patlayan nokta neresiydi?" sorusunu cevaplar.- **💡 Şeffaf Düşünce Zinciri** – Yapay zekanın "kara kutu" olmasını engeller. Asistanın logları nasıl okuduğunu, hangi dökümana başvurduğunu ve nasıl karar verdiğini arayüzde adım adım izlersiniz.- **🛡️ Güvenilir Bilgi (Sıfır Tahmin)** – Sistemin RAG (Retrieval-Augmented Generation) beyni, resmi teknik dokümanlardan beslenir. Bilmediği bir kod gördüğünde uydurmaz, uzman müdahalesi talep eder.- **⚡ Tak-Çalıştır Endüstriyel Mimari** – Ağır veritabanları gerektirmez. Minimum sistem gereksinimiyle her Windows/Endüstriyel PC'de anında çalışır.
 
 
 
----## 🚀 Hızlı Başlangıç
+---## 🏗️ Nasıl Çalışır?1. **Yükle** – Fabrikadan alınan arıza logunu (.csv) sisteme sürükleyin.2. **Analiz Et** – FaultMind veriyi okur, zaman damgalarını sıralar ve asıl donanım/haberleşme problemini tespit eder.3. **Çöz** – Teknik dökümanlara göre "Şu an sahada yapılması gereken ilk 3 işlem" listesini size sunar.
 
 
 
-Sistemi kendi bilgisayarınızda anında ayağa kaldırmak için:```bash
+---## 🚀 Hızlı Başlangıç### Gereksinimler- Python 3.9 veya üzeri- [Anthropic API Anahtarı](https://console.anthropic.com/)### Kurulum Adımları```bash
 
-# Repoyu klonlayın ve klasöre girin
+# Repoyu klonlayın
 
 git clone [https://github.com/yourusername/FaultMind.git](https://github.com/yourusername/FaultMind.git)
 
@@ -39,30 +35,48 @@ cd FaultMind
 
 
 
+# Sanal ortam oluşturun (Windows)
+
+python -m venv venv
+
+venv\Scripts\activate
+
+
+
 # Gerekli kütüphaneleri kurun
 
 pip install -r requirements.txt
 
+Yapılandırma ve Veritabanı (RAG) İnşası
+
+PDF Dokümanlarını Ekleyin: Telif hakları gereği Siemens'e ait PDF dosyaları bu repoda bulunmamaktadır. Sistemi kullanmak için kendi indirdiğiniz Siemens S7-1500/1200 "System Manual" PDF'lerini docs/ klasörüne koymanız gerekmektedir.
+
+API Anahtarını Ayarlayın: Ana dizinde bir .env dosyası oluşturun ve içine Anthropic API anahtarınızı girin:
+
+Kod snippet'i
 
 
-# Veritabanını tek seferlik oluşturun (docs/ klasöründeki PDF'lerden)
+
+ANTHROPIC_API_KEY=sk-ant-api03-...
+
+RAG Veritabanını Oluşturun: docs/ klasörüne koyduğunuz PDF'lerden AI beynini inşa edin (Bu işlem tek seferliktir):
+
+Bash
+
+
 
 python src/build_rag.py
 
+Uygulamayı Başlatın
+
+Bash
 
 
-# Arayüzü başlatın!
 
 streamlit run src/app.py
 
-(Not: Projenin çalışması için ana dizine .env dosyası açıp ANTHROPIC_API_KEY=sk-... anahtarınızı girmeniz gerekmektedir.)
+Tarayıcınızda otomatik açılan sekmede FaultMind arayüzünü görebilirsiniz.
 
-🛠️ Tech Stack
+⚖️ Yasal Uyarı / Disclaimer
 
-Dil & Arayüz: Python, Streamlit, Pandas
-
-AI Core: Anthropic Claude 3 (Agentic Logic), LlamaIndex (Native Storage)
-
-Endüstriyel veri gizliliğini (NDA) korumak amacıyla projede gerçek fabrika verileri değil, yapay zeka ile üretilmiş sentetik arıza logları (sample_log.csv) kullanılmaktadır.
-
-"Yasal Uyarı: Bu proje bağımsız ve açık kaynaklı bir topluluk çalışmasıdır. 'Siemens', 'S7-1200' ve 'S7-1500' Siemens AG'nin tescilli ticari markalarıdır. FaultMind'ın Siemens AG ile resmi bir bağı bulunmamaktadır."
+Bu proje bağımsız, açık kaynaklı bir topluluk çalışmasıdır. 'Siemens', 'S7-1200' ve 'S7-1500' Siemens AG'nin tescilli ticari markalarıdır. FaultMind'ın Siemens AG ile hiçbir resmi bağı, sponsorluğu veya ortaklığı bulunmamaktadır.
