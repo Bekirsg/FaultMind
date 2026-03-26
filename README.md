@@ -1,5 +1,5 @@
 
-# ⚙️ FaultMind: Agentic PLC/SCADA Diagnostic Assistant
+# ⚙️ FaultMind: Agentic PLC/SCADA Arıza Tespit Asistanı 
 
 
 
@@ -25,57 +25,42 @@ Sahadaki mühendislerin arıza ararken harcadığı saatleri, yapay zekanın **1
 
 
 
----## 🚀 Hızlı Başlangıç### Gereksinimler- Python 3.9 veya üzeri- [Anthropic API Anahtarı](https://console.anthropic.com/)### Kurulum Adımları```bash
+---## 🚀 Hızlı Başlangıç### Gereksinimler- Python 3.9 veya üzeri- [Anthropic API Anahtarı](https://console.anthropic.com/)
 
+```markdown
+### Kurulum Adımları
+
+```bash
 # Repoyu klonlayın
-
-git clone [https://github.com/yourusername/FaultMind.git](https://github.com/Bekirsg/FaultMind.git)
-
+git clone [https://github.com/Bekirsg/FaultMind.git](https://github.com/Bekirsg/FaultMind.git)
 cd FaultMind
 
-
-
 # Sanal ortam oluşturun (Windows)
-
 python -m venv venv
-
 venv\Scripts\activate
 
-
-
 # Gerekli kütüphaneleri kurun
-
 pip install -r requirements.txt
+```
 
-Yapılandırma ve Veritabanı (RAG) İnşası
+### Yapılandırma ve Veritabanı (RAG) İnşası
 
-PDF Dokümanlarını Ekleyin: Telif hakları gereği Siemens'e ait PDF dosyaları bu repoda bulunmamaktadır. Sistemi kullanmak için kendi indirdiğiniz Siemens S7-1500/1200 "System Manual" PDF'lerini docs/ klasörüne koymanız gerekmektedir.
+1. **PDF Dokümanlarını Ekleyin:** Telif hakları gereği Siemens'e ait PDF dosyaları bu repoda bulunmamaktadır. Sistemi kullanmak için kendi indirdiğiniz Siemens S7-1500/1200 "System Manual" PDF'lerini `docs/` klasörüne koymanız gerekmektedir.
+2. **API Anahtarını Ayarlayın:** Ana dizinde bir `.env` dosyası oluşturun ve içine Anthropic API anahtarınızı girin:
+   ```env
+   ANTHROPIC_API_KEY=sk-ant-api03-...
+   ```
+3. **RAG Veritabanını Oluşturun:** `docs/` klasörüne koyduğunuz PDF'lerden AI beynini inşa edin (Bu işlem tek seferliktir):
+   ```bash
+   python src/build_rag.py
+   ```
 
-API Anahtarını Ayarlayın: Ana dizinde bir .env dosyası oluşturun ve içine Anthropic API anahtarınızı girin:
+### Uygulamayı Başlatın
 
-Kod snippet'i
-
-
-
-ANTHROPIC_API_KEY=sk-ant-api03-...
-
-RAG Veritabanını Oluşturun: docs/ klasörüne koyduğunuz PDF'lerden AI beynini inşa edin (Bu işlem tek seferliktir):
-
-Bash
-
-
-
-python src/build_rag.py
-
-Uygulamayı Başlatın
-
-Bash
-
-
-
+```bash
 streamlit run src/app.py
-
-Tarayıcınızda otomatik açılan sekmede FaultMind arayüzünü görebilirsiniz.
+```
+*Tarayıcınızda otomatik açılan sekmede FaultMind arayüzünü görebilirsiniz.*
 
 ⚖️ Yasal Uyarı / Disclaimer
 
