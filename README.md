@@ -43,6 +43,7 @@ Yüzlerce satırlık PLC/SCADA logunu **1 dakikada** analiz eder, zaman korelasy
 
 ### Kurulum Adımları
 
+```bash
 # 1. Repoyu klonlayın
 git clone https://github.com/Bekirsg/FaultMind.git
 cd FaultMind
@@ -86,5 +87,4 @@ Tarayıcınızda FaultMind arayüzü otomatik olarak açılacaktır.
 
 Bu proje bağımsız, açık kaynaklı bir topluluk çalışmasıdır.  
 **Siemens**, **S7-1200** ve **S7-1500** Siemens AG’nin tescilli ticari markalarıdır.  
-
 FaultMind’ın Siemens AG ile hiçbir resmi bağı, sponsorluğu veya ortaklığı bulunmamaktadır.
