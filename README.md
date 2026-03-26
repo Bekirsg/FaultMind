@@ -17,11 +17,18 @@ Sahadaki mühendislerin arıza ararken harcadığı saatleri, yapay zekanın **1
 
 
 
----## 🌟 Neden FaultMind?- **🕵️‍♂️ Otonom Kök Neden Analizi** – Yüzlerce satırlık karmaşık SCADA loglarını tarar, olayların zaman akışını (zaman korelasyonu) kurar ve "İlk patlayan nokta neresiydi?" sorusunu cevaplar.- **💡 Şeffaf Düşünce Zinciri** – Yapay zekanın "kara kutu" olmasını engeller. Asistanın logları nasıl okuduğunu, hangi dökümana başvurduğunu ve nasıl karar verdiğini arayüzde adım adım izlersiniz.- **🛡️ Güvenilir Bilgi (Sıfır Tahmin)** – Sistemin RAG (Retrieval-Augmented Generation) beyni, resmi teknik dokümanlardan beslenir. Bilmediği bir kod gördüğünde uydurmaz, uzman müdahalesi talep eder.- **⚡ Tak-Çalıştır Endüstriyel Mimari** – Ağır veritabanları gerektirmez. Minimum sistem gereksinimiyle her Windows/Endüstriyel PC'de anında çalışır.
+---## 🌟 Neden FaultMind?-
+**🕵️‍♂️ Otonom Kök Neden Analizi** – Yüzlerce satırlık karmaşık SCADA loglarını tarar, olayların zaman akışını (zaman korelasyonu) kurar ve "İlk patlayan nokta neresiydi?" sorusunu cevaplar.-
+**💡 Şeffaf Düşünce Zinciri** – Yapay zekanın "kara kutu" olmasını engeller. Asistanın logları nasıl okuduğunu, hangi dökümana başvurduğunu ve nasıl karar verdiğini arayüzde adım adım izlersiniz.-
+**🛡️ Güvenilir Bilgi (Sıfır Tahmin)** – Sistemin RAG (Retrieval-Augmented Generation) beyni, resmi teknik dokümanlardan beslenir. Bilmediği bir kod gördüğünde uydurmaz, uzman müdahalesi talep eder.-
+**⚡ Tak-Çalıştır Endüstriyel Mimari** – Ağır veritabanları gerektirmez. Minimum sistem gereksinimiyle her Windows/Endüstriyel PC'de anında çalışır.
 
 
 
----## 🏗️ Nasıl Çalışır?1. **Yükle** – Fabrikadan alınan arıza logunu (.csv) sisteme sürükleyin.2. **Analiz Et** – FaultMind veriyi okur, zaman damgalarını sıralar ve asıl donanım/haberleşme problemini tespit eder.3. **Çöz** – Teknik dökümanlara göre "Şu an sahada yapılması gereken ilk 3 işlem" listesini size sunar.
+---## 🏗️ Nasıl Çalışır?
+1. **Yükle** – Fabrikadan alınan arıza logunu (.csv) sisteme sürükleyin.
+2. **Analiz Et** – FaultMind veriyi okur, zaman damgalarını sıralar ve asıl donanım/haberleşme problemini tespit eder.
+3. **Çöz** – Teknik dökümanlara göre "Şu an sahada yapılması gereken ilk 3 işlem" listesini size sunar.
 
 
 
