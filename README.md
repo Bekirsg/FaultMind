@@ -1,74 +1,93 @@
 
-# ⚙️ FaultMind: Agentic PLC/SCADA Arıza Tespit Asistanı 
+# ⚙️ FaultMind: Agentic PLC/SCADA Arıza Tespit Asistanı
 
+**FaultMind**, Siemens S7-1200/1500 sistemlerinde yaşanan zincirleme arızaların **kök nedenini otonom olarak tespit eden** açık kaynaklı, şeffaf ve düşük maliyetli bir AI asistanıdır.
 
+Sahadaki otomasyon mühendisleri ve bakım teknisyenleri için geliştirildi:  
+Yüzlerce satırlık PLC/SCADA logunu **1 dakikada** analiz eder, zaman korelasyonu kurar ve **adım adım müdahale planı** sunar.
 
-**FaultMind**, endüstriyel tesislerde (Siemens S7-1200/1500) yaşanan zincirleme otomasyon arızalarının kök nedenini otonom olarak bulan açık kaynaklı bir yapay zeka asistanıdır.
+🔗 **Canlı Demo** → [FaultMind Demo](https://faultmind-i9ee6rjkerjqqggpbcznh5.streamlit.app/)  
+🐙 **Geliştirici** → [Bekir Samet Güzlek](https://www.linkedin.com/in/bekirsametguzlek/)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/bekirsametguzlek/)
 
+---
 
+## 🌟 Neden FaultMind?
 
-Sahadaki mühendislerin arıza ararken harcadığı saatleri, yapay zekanın **1 dakikalık** kesin ve kanıta dayalı analizine dönüştürür.
+- **🕵️‍♂️ Otonom Kök Neden Analizi**  
+  Karmaşık logları tarar, olayların zaman sırasını kurar ve “İlk patlayan nokta neresiydi?” sorusunu net cevaplar.
 
+- **💡 Tam Şeffaf Düşünce Zinciri**  
+  Yapay zekanın her adımını (log parse → zaman analizi → RAG sorgusu → karar) arayüzde canlı olarak izleyebilirsiniz.
 
+- **🛡️ Güvenilir ve Kanıta Dayalı**  
+  Resmi Siemens teknik dokümanlarından beslenen RAG sistemiyle çalışır. Bilmediği bir hata kodu gördüğünde uydurmaz, “Uzman müdahalesi gerekli” der.
 
-🔗 **Canlı Demo:** [FaultMind Demo Sitesi](https://faultmind-i9ee6rjkerjqqggpbcznh5.streamlit.app/)
+- **⚡ Hafif ve Tak-Çalıştır**  
+  Ağır veritabanı veya karmaşık kurulum gerektirmez. Her Windows makinesinde minimum kaynakla anında çalışır.
 
-🐙 **Geliştirici:** [Bekir Samet Güzlek](https://www.linkedin.com/in/bekirsametguzlek/) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/bekirsametguzlek)
+---
 
+## 🏗️ Nasıl Çalışır?
 
+1. **Yükle** → Fabrikadan aldığınız arıza logunu (.csv) arayüze sürükleyin.  
+2. **Analiz Et** → FaultMind logu parse eder, zaman korelasyonu yapar ve RAG ile dokümanlarda arama yapar.  
+3. **Çöz** → Kök neden hipotezi + sahada yapılması gereken **adım adım müdahale planını** size sunar.
 
----## 🌟 Neden FaultMind?-
-**🕵️‍♂️ Otonom Kök Neden Analizi** – Yüzlerce satırlık karmaşık SCADA loglarını tarar, olayların zaman akışını (zaman korelasyonu) kurar ve "İlk patlayan nokta neresiydi?" sorusunu cevaplar.-
-**💡 Şeffaf Düşünce Zinciri** – Yapay zekanın "kara kutu" olmasını engeller. Asistanın logları nasıl okuduğunu, hangi dökümana başvurduğunu ve nasıl karar verdiğini arayüzde adım adım izlersiniz.-
-**🛡️ Güvenilir Bilgi (Sıfır Tahmin)** – Sistemin RAG (Retrieval-Augmented Generation) beyni, resmi teknik dokümanlardan beslenir. Bilmediği bir kod gördüğünde uydurmaz, uzman müdahalesi talep eder.-
-**⚡ Tak-Çalıştır Endüstriyel Mimari** – Ağır veritabanları gerektirmez. Minimum sistem gereksinimiyle her Windows/Endüstriyel PC'de anında çalışır.
+---
 
+## 🚀 Hızlı Başlangıç
 
+### Gereksinimler
+- Python 3.9 veya üzeri
+- Anthropic API Anahtarı ([console.anthropic.com](https://console.anthropic.com/))
 
----## 🏗️ Nasıl Çalışır?
-1. **Yükle** – Fabrikadan alınan arıza logunu (.csv) sisteme sürükleyin.
-2. **Analiz Et** – FaultMind veriyi okur, zaman damgalarını sıralar ve asıl donanım/haberleşme problemini tespit eder.
-3. **Çöz** – Teknik dökümanlara göre "Şu an sahada yapılması gereken ilk 3 işlem" listesini size sunar.
-
-
-
----## 🚀 Hızlı Başlangıç### Gereksinimler- Python 3.9 veya üzeri- [Anthropic API Anahtarı](https://console.anthropic.com/)
-
-```markdown
 ### Kurulum Adımları
 
 ```bash
-# Repoyu klonlayın
-git clone [https://github.com/Bekirsg/FaultMind.git](https://github.com/Bekirsg/FaultMind.git)
+# 1. Repoyu klonlayın
+git clone https://github.com/Bekirsg/FaultMind.git
 cd FaultMind
 
-# Sanal ortam oluşturun (Windows)
+# 2. Sanal ortam oluşturun (Windows)
 python -m venv venv
 venv\Scripts\activate
 
-# Gerekli kütüphaneleri kurun
+# 3. Gerekli paketleri kurun
 pip install -r requirements.txt
 ```
 
-### Yapılandırma ve Veritabanı (RAG) İnşası
+### Yapılandırma
 
-1. **PDF Dokümanlarını Ekleyin:** Telif hakları gereği Siemens'e ait PDF dosyaları bu repoda bulunmamaktadır. Sistemi kullanmak için kendi indirdiğiniz Siemens S7-1500/1200 "System Manual" PDF'lerini `docs/` klasörüne koymanız gerekmektedir.
-2. **API Anahtarını Ayarlayın:** Ana dizinde bir `.env` dosyası oluşturun ve içine Anthropic API anahtarınızı girin:
+1. **PDF Dokümanlarını Ekleyin**  
+   `docs/` klasörüne kendi indirdiğiniz Siemens S7-1500/1200 System Manual ve Diagnostics PDF’lerini koyun.  
+   (Telif hakları nedeniyle bu dosyalar repoda yer almamaktadır.)
+
+2. **API Anahtarını Ayarlayın**  
+   Ana dizinde `.env` dosyası oluşturun ve içine şu satırı ekleyin:
+
    ```env
-   ANTHROPIC_API_KEY=sk-ant-api03-...
+   ANTHROPIC_API_KEY=sk-ant-api...
    ```
-3. **RAG Veritabanını Oluşturun:** `docs/` klasörüne koyduğunuz PDF'lerden AI beynini inşa edin (Bu işlem tek seferliktir):
+
+3. **RAG Veritabanını Oluşturun** (tek seferlik)
    ```bash
    python src/build_rag.py
    ```
 
-### Uygulamayı Başlatın
+4. **Uygulamayı Başlatın**
+   ```bash
+   streamlit run src/app.py
+   ```
 
-```bash
-streamlit run src/app.py
+Tarayıcınızda FaultMind arayüzü otomatik olarak açılacaktır.
+
+---
+
+## ⚖️ Yasal Uyarı
+
+Bu proje bağımsız, açık kaynaklı bir topluluk çalışmasıdır.  
+**Siemens**, **S7-1200** ve **S7-1500** Siemens AG’nin tescilli ticari markalarıdır.  
+
+FaultMind’ın Siemens AG ile hiçbir resmi bağı, sponsorluğu veya ortaklığı bulunmamaktadır.
 ```
-*Tarayıcınızda otomatik açılan sekmede FaultMind arayüzünü görebilirsiniz.*
-
-⚖️ Yasal Uyarı / Disclaimer
-
-Bu proje bağımsız, açık kaynaklı bir topluluk çalışmasıdır. 'Siemens', 'S7-1200' ve 'S7-1500' Siemens AG'nin tescilli ticari markalarıdır. FaultMind'ın Siemens AG ile hiçbir resmi bağı, sponsorluğu veya ortaklığı bulunmamaktadır.
