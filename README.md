@@ -13,7 +13,7 @@ Sahadaki mühendislerin arıza ararken harcadığı saatleri, yapay zekanın **1
 
 🔗 **Canlı Demo:** [FaultMind Demo Sitesi](https://faultmind-i9ee6rjkerjqqggpbcznh5.streamlit.app/)
 
-🐙 **Geliştirici:** [Bekir Samet Güzlek](https://github.com/yourusername) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/bekirsametguzlek)
+🐙 **Geliştirici:** [Bekir Samet Güzlek](https://www.linkedin.com/in/bekirsametguzlek/) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/bekirsametguzlek)
 
 
 
